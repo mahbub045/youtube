@@ -1,12 +1,25 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+Route::match(['get', 'post'],'/about', function(){
+    return view('about');
+});
+
+Route::get('/contact', function(){
+    return view('contact');
+});
+
+
+// Igor it
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
