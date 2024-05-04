@@ -10,13 +10,13 @@ Route::get('/', function () {
 
 
 
-Route::match(['get', 'post'],'/about', function(){
+Route::get(md5('/about'), function(){
     return view('about');
-});
+})->name('about.us');
 
 Route::get('/contact', function(){
     return view('contact');
-});
+})->name('contact.us');
 
 
 // Igor it

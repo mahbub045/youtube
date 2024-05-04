@@ -52,10 +52,10 @@
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                             <ul class="list">
                                 <li class="list-item">
-                                    <a href="{{ url('about') }}">About</a>
+                                    <a href="{{ route('about.us') }}">About</a>
                                 </li>
-                                <li class="list-item">
-                                    <a href="{{ URL::to('contact') }}">Contact</a>
+                                <li class="list-item" >
+                                    <a href="{{ route('contact.us') }}">Contact</a>
                                 </li>
                             </ul>
                         </div>
